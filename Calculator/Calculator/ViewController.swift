@@ -66,6 +66,7 @@ class ViewController: UIViewController {
             answerField.text = "\(answer)";
         } else if (operationField == "+") {
             answer = num1! + num2!;
+            answerField.text = "\(answer)";
         }
     }
 }
