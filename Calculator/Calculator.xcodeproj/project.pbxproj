@@ -11,7 +11,6 @@
 		BF752D66197ADA7500B15BB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF752D65197ADA7500B15BB7 /* ViewController.swift */; };
 		BF752D69197ADA7500B15BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF752D67197ADA7500B15BB7 /* Main.storyboard */; };
 		BF752D6B197ADA7500B15BB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF752D6A197ADA7500B15BB7 /* Images.xcassets */; };
-		BF752D81197AE2E600B15BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF752D80197AE2E600B15BB7 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +31,6 @@
 		BF752D68197ADA7500B15BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF752D6A197ADA7500B15BB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BF752D70197ADA7500B15BB7 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF752D80197AE2E600B15BB7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../swift_calc/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +74,6 @@
 				BF752D63197ADA7500B15BB7 /* AppDelegate.swift */,
 				BF752D65197ADA7500B15BB7 /* ViewController.swift */,
 				BF752D67197ADA7500B15BB7 /* Main.storyboard */,
-				BF752D80197AE2E600B15BB7 /* Main.storyboard */,
 				BF752D6A197ADA7500B15BB7 /* Images.xcassets */,
 				BF752D61197ADA7500B15BB7 /* Supporting Files */,
 			);
@@ -171,7 +168,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF752D81197AE2E600B15BB7 /* Main.storyboard in Resources */,
 				BF752D69197ADA7500B15BB7 /* Main.storyboard in Resources */,
 				BF752D6B197ADA7500B15BB7 /* Images.xcassets in Resources */,
 			);
@@ -377,6 +373,7 @@
 				BF752D7C197ADA7600B15BB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF752D7D197ADA7600B15BB7 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -385,6 +382,7 @@
 				BF752D7F197ADA7600B15BB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
