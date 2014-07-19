@@ -104,7 +104,7 @@
                                     <rect key="frame" x="20" y="20" width="288" height="42"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="239" width="263" height="21"/>
+                                    <rect key="frame" x="107" y="239" width="106" height="21"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="77" y="89" width="168" height="21"/>
@@ -215,13 +215,25 @@
                                     <action selector="buttonTapped:" destination="vXZ-lx-hvc" eventType="touchDown" id="lvF-aX-Emi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdS-pO-BUH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="398" width="106" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="clearTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="K8R-z5-Cja"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7E-rQ-iE6">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Clear">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="77" y="245" width="168" height="30"/>
+                                    <rect key="frame" x="77" y="258" width="168" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="clearTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ysb-PG-1tC"/>
@@ -231,7 +243,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="SdS-pO-BUH"/>
                                 <exclude reference="i7E-rQ-iE6"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="SdS-pO-BUH"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -246,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.75" y="144"/>
+            <point key="canvasLocation" x="138" y="144"/>
         </scene>
     </scenes>
 </document>
