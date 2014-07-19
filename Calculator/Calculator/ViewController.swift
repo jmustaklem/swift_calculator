@@ -23,7 +23,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonTapped(theButton: UIButton) {
-        println(theButton.titleLabel.text);
+        if answerField.text == "0" {
+            answerField.text = theButton.titleLabel.text;
+        } else {
+            answerField.text = answerField.text + theButton.titleLabel.text;
+        }
     }
     
     @IBAction func plusTapped(theButton: UIButton) {
@@ -32,6 +36,10 @@ class ViewController: UIViewController {
     
     @IBAction func subtractTapped(theButton: UIButton) {
         
+    }
+    
+    @IBAction func clearTapped(theButton: UIButton) {
+        answerField.text = "0";
     }
 }
 
