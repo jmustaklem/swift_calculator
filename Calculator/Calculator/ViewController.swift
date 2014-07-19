@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var lastNumber = "";
     @IBOutlet var answerField: UILabel;
+    @IBOutlet var operationField: UILabel;
                             
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,15 +33,40 @@ class ViewController: UIViewController {
     }
     
     @IBAction func plusTapped(theButton: UIButton) {
-        
+        if(operationField.text == "") {
+            lastNumber = answerField.text;
+            operationField.text = "+";
+            answerField.text = "0";
+        } else {
+            operationField.text = "+";
+        }
     }
     
     @IBAction func subtractTapped(theButton: UIButton) {
-        
+        if(operationField.text == "") {
+            lastNumber = answerField.text;
+            operationField.text = "-";
+            answerField.text = "0";
+        } else {
+            operationField.text = "-";
+        }
     }
     
-    @IBAction func clearTapped(theButton: UIButton) {
+    @IBAction func clearTapped(AnyObject) {
         answerField.text = "0";
+        operationField.text = "";
+    }
+    
+    @IBAction func equalTapped(AnyObject?) {
+        var num1 = lastNumber.toInt();
+        var num2 = answerField.text.toInt();
+        var answer = 0;
+        if (operationField.text == "-") {
+            answer = num1! - num2!;
+            answerField.text = "\(answer)";
+        } else if (operationField == "+") {
+            answer = num1! + num2!;
+        }
     }
 }
 
